@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #75b6d5;
+}
+
+a {
+  cursor: pointer;
+}
+
+.header_wrapper {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  padding: 15px 2vw;
+  margin: auto;
+  font-family: Comfortaa;
+  align-items: center;
+  color: #1b1b1e;
+}
+
+h1 {
+  font-size: 25px;
+  font-family: Comfortaa;
+  color: #1b1b1e;
+}
+
+.ToDoList {
+  padding: 2vw;
+  margin: auto;
+  margin-top: 20px;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 1vw;
+}
+
+section {
+  min-width: 300px;
+  height: 400px;
+  background-color: antiquewhite;
+}
+
+@media (max-width: 950px) and (min-width: 630px) {
+  .ToDoList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 629px) {
+  .ToDoList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
